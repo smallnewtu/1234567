@@ -37,6 +37,9 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
+  
+ 
+  
   font-family: 'Noto Sans TC', serif;
   font-size: 1.35rem;
 }
@@ -147,3 +150,18 @@ a {
 a:hover, a:focus, a:active {
   color:  #1e9d9c;
 }
+
+
+ .timeline{
+    position: relative ;
+    margin: 0 auto;
+  }
+  .timeline::after {
+    content: 'SMALLNEW';
+    position: absolute;
+    width: 8px;
+    background-color: #424242;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;

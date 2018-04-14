@@ -157,7 +157,7 @@ a:hover, a:focus, a:active {
     margin: 0 auto;
   }
   .timeline::after {
-    content: 'SMALLNEW';
+    content: '';
     position: absolute;
     width: 8px;
     background-color: #424242;

@@ -168,9 +168,8 @@ a:hover, a:focus, a:active {
     
 } 
 .timeline-block {
-    padding: 20px 60px;
+    padding: 10px 40px;
     position: relative;
-    width: 15px;
     background-color: #ddefdc;
    width: 50%;
 }
@@ -181,10 +180,10 @@ a:hover, a:focus, a:active {
     position: absolute;
     width: 30px;
     height: 30px;
-    right: 0px;
+    right: -12px;
     background-color: #455065;
     border: 4px solid #b9ac93;
     top: 20px;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 3;
 }

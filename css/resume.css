@@ -168,9 +168,9 @@ a:hover, a:focus, a:active {
     
 } 
 .timeline-block {
-    padding: 10px 40px;
+    padding: 20px 60px;
     position: relative;
-    width: 8px;
+    width: 15px;
     background-color: #ddefdc;
    width: 50%;
 }

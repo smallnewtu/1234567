@@ -20,3 +20,16 @@
     background-color: #ddefdc;
    width: 50%;
 }
+/* The circles on the timeline */
+.container::after {
+    content: 'NEW';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #455065;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}

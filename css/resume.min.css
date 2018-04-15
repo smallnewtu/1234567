@@ -29,7 +29,7 @@
     height: 40px;
     right: -20px;
     background-color: #455065;
-    border: 3px solid #ddefdc;
+    border: 3px solid inherit;
     top: 15px;
     border-radius: 50%;
     z-index: 1;

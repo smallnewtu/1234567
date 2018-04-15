@@ -23,16 +23,16 @@
 
 /* The circles on the timeline */
 .timeline-block::after {
-    content: '';
+    content: 'NEW';
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     right: -12px;
-    background-color: white;
+    background-color: #455065;
     border: 4px solid #b9ac93;
     top: 15px;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Place the container to the left */

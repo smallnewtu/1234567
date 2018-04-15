@@ -25,8 +25,8 @@
 .timeline-block::after {
     content: 'NEW';
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     right: -18px;
     background-color: #455065;
     border: 3px solid #b9ac93;
@@ -47,7 +47,7 @@
 
 /* Fix the circle for containers on the right side */
 .timeline-right::after{
-  left: -12PX;
+  left: -18PX;
 }
 
 /* Media queries - Responsive timeline on screens less than 992px wide */

@@ -47,7 +47,7 @@
 
 /*Fix the circle for containers on the right side */
 .timeline-right::after{
-  left: -12;
+  left: 12;
 }
 
 /* Media queries - Responsive timeline on screens less than 992px wide */

@@ -171,6 +171,7 @@ a:hover, a:focus, a:active {
     padding: 10px 40px;
     position: relative;
     background-color: #ddefdc;
+    border-radius: 10% 10% 10% 10%;
    width: 50%;
 }
 

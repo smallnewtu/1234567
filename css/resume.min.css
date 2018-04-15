@@ -23,13 +23,13 @@
 
 /* The circles on the timeline */
 .timeline-block::after {
-    content: 'N';
+    content: 'NEW';
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     right: -18px;
     background-color: #455065;
-    border: 4px solid #b9ac93;
+    border: 3px solid #b9ac93;
     top: 15px;
     border-radius: 50%;
     z-index: 2;
@@ -45,9 +45,9 @@
     left: 50%;
 }
 
-/*Fix the circle for containers on the right side */
+/* Fix the circle for containers on the right side */
 .timeline-right::after{
-  left: 12;
+  left: -12PX;
 }
 
 /* Media queries - Responsive timeline on screens less than 992px wide */

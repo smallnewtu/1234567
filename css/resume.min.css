@@ -22,7 +22,7 @@
 }
 
 /* The circles on the timeline */
-.timeline-block :: after {
+.timeline-block::after {
     content: '';
     position: absolute;
     width: 25px;

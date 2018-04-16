@@ -55,7 +55,7 @@
 /* Place the timelime to the left */
   .timeline::after {
    background-color: inherit; 
-   left:40px;
+   left:31px;
   }
 
 /* Full-width containers */

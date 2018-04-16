@@ -19,6 +19,7 @@
     position: relative;
     background-color: #ddefdc;
    width: 50%;
+   z-index: 3;
 }
 
 /* The circles on the timeline */

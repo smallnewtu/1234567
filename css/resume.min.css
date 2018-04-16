@@ -216,7 +216,7 @@ a:hover, a:focus, a:active {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
-    z-index: 5;
+    background-color: transparent; 
   }
 
 /* Make all right containers behave like the left ones */

@@ -172,7 +172,7 @@ a:hover, a:focus, a:active {
     position: relative;
     background-color: #ddefdc;
     width: 50%;
-   
+    border-style:outset;
 }
 
 /* The circles on the timeline */

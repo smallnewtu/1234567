@@ -218,6 +218,7 @@ a:hover, a:focus, a:active {
     padding-left: 70px;
     padding-right: 25px;
     background-color: transparent; 
+    border-style:inset;
   }
 
 /* Make all right containers behave like the left ones */

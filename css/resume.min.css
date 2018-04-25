@@ -23,7 +23,6 @@ h6 {
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
-  padding-top: 30px；
 }
 h1 {
   font-size: 6rem;
@@ -32,6 +31,7 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
+  padding-top: 30px；
 }
 
 .subheading {

@@ -178,205 +178,108 @@ body, html {
 
      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="life">
 <h2 class="mb-5"><span class="text-primary">我的生活</span>Life</h2>
- <div class="my-auto"><meta name="viewport" content="width=device-width, initial-scale=1">
+       
+       <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: Noto Sans TC;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
+  width: 50%;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
+.overlay {
   position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
+  bottom: 100%;
+  left: 0;
   right: 0;
-  border-radius: 3px 0 0 3px;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
+.text {
   color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 </style>
-</div>
+</head>
 <body>
- <div class="my-auto">
+
 <div class="container">
-  <div class="mySlides">
-    <img src="https://i.imgur.com/Y6F83It.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="https://i.imgur.com/N0C0Fv0.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="https://i.imgur.com/xlladwH.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <img src="https://i.imgur.com/rkesbk6.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="https://i.imgur.com/CNnTtlF.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <img src="https://i.imgur.com/OobXMMC.jpg" style="width:100%">
-  </div>
-    
-   <div class="mySlides">
-    <img src="https://i.imgur.com/Q2oHcdw.jpg" style="width:100%">
-  </div>
-  
-  <div class="mySlides">
-    <img src="https://i.imgur.com/kwfCYTp.jpg" style="width:100%">
-  </div>
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-<div class="row">
--    <div class="column">
--      <img class="demo cursor" src="https://i.imgur.com/Y6F83It.jpg" style="width:100%" onclick="currentSlide(1)" alt="Chou16,2012">
--    </div>
--    <div class="column">
--      <img class="demo cursor" src="https://i.imgur.com/N0C0Fv0.jpg" style="width:100%" onclick="currentSlide(2)" alt="Riding a bicycle in Houli,2012">
--    </div>
--    <div class="column">
--      <img class="demo cursor" src="https://i.imgur.com/xlladwH.jpg" style="width:100%" onclick="currentSlide(3)" alt="Fju.Commarts Summer Camp Team,2015">
--    </div>
--    <div class="column">
--      <img class="demo cursor" src="https://i.imgur.com/rkesbk6.jpg" style="width:100%" onclick="currentSlide(4)" alt="Baseball team,2016">
--    </div>
--    <div class="column">
--      <img class="demo cursor" src="https://i.imgur.com/CNnTtlF.jpg" style="width:100%" onclick="currentSlide(5)" alt="Xiamen University with family,2017">
--    </div>    
--    <div class="column">
--      <img class="demo cursor" src="https://i.imgur.com/OobXMMC.jpg" style="width:100%" onclick="currentSlide(6)" alt="High school life with classmates,2017">
--    </div>
--      <div class="column">
--      <img class="demo cursor" src="https://i.imgur.com/Q2oHcdw.jpg" style="width:100%" onclick="currentSlide(6)" alt="Fuzhou West Lake,2017">
--    </div>
--          <div class="column">
--      <img class="demo cursor" src="https://i.imgur.com/kwfCYTp.jpg" style="width:100%" onclick="currentSlide(6)" alt="Lin Wei-chu Special exhibition,2018">
--    </div>
+  <img src="https://i.imgur.com/Y6F83It.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Chou16,2012</div>
   </div>
 </div>
-   </div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-    
+  
+  <div class="container">
+  <img src="https://i.imgur.com/N0C0Fv0.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Riding a bicycle in Houli,2012</div>
+  </div>
+</div>
+  
+      <div class="container">
+  <img src="https://i.imgur.com/rkesbk6.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Baseball team,2015</div>
+  </div>
+</div>  
+  
+    <div class="container">
+  <img src="https://i.imgur.com/xlladwH.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Fju.Commarts Summer Camp Team,2016</div>
+  </div>
+</div>
+  
+    <div class="container">
+  <img src="https://i.imgur.com/CNnTtlF.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Xiamen University with family,2017</div>
+  </div>
+</div>
+  
+      <div class="container">
+  <img src="https://i.imgur.com/OobXMMC.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">High school life with classmates,2017</div>
+  </div>
+</div>
+ 
+      <div class="container">
+  <img src="https://i.imgur.com/Q2oHcdw.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Fuzhou West Lake,2017</div>
+  </div>
+</div>
+  
+        <div class="container">
+  <img src="https://i.imgur.com/kwfCYTp.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Lin Wei-chu Special exhibition,2018</div>
+  </div>
+</div>
+  
 </body>
      </section>
     
